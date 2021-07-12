@@ -1,0 +1,147 @@
+.card{
+    border: 0px;
+    background-color: rgb(243, 243, 243);
+    border-radius: .5rem;
+}
+
+.card_box .row{
+    margin-bottom: 3%;
+}
+
+.card_box .card-header{
+    color: #fff;
+}
+
+.card_box .row:nth-child(1) > div:nth-child(1) .card-header{
+    background-color: rgb(42, 140, 165);
+}
+
+.card_box .row:nth-child(1) > div:nth-child(2) .card-header{
+    background-color: rgb(42, 165, 114);
+}
+
+.card_box .row:nth-child(2) > div:nth-child(1) .card-header{
+    background-color: rgb(189, 167, 45);
+}
+
+.card_box .row:nth-child(2) > div:nth-child(2) .card-header{
+    background-color: rgb(185, 96, 55);
+}
+
+.card_box .row:nth-child(3) > div:nth-child(1) .card-header{
+    background-color: rgb(190, 76, 76);
+}
+
+.card_box .row:nth-child(3) > div:nth-child(2) .card-header{
+    background-color: rgb(189, 80, 161);
+}
+
+.card_box .row:nth-child(4) > div:nth-child(1) .card-header{
+    background-color: rgb(135, 80, 187);
+}
+
+.card_box .row:nth-child(4) > div:nth-child(2) .card-header{
+    background-color: rgb(81, 88, 189);
+}
+
+.card_box .card-text{
+    display: block;
+    min-height: 6rem;
+}
+
+.iframe_box{
+    position: relative;
+    display: block;
+    margin: 0 auto 5% auto;
+    width: 100%;
+    max-height: 20rem;
+    border: 1px solid rgb(219, 219, 219);
+    overflow: auto;
+}
+
+/* 设置滚动条的样式 */
+.iframe_box::-webkit-scrollbar {
+    width:0.4rem;
+}
+/* 滚动槽 */
+.iframe_box::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset006pxrgba(0,0,0,0.8);
+    border-radius:10px;
+    background:rgba(0, 0, 0, .8);
+}
+/* 滚动条滑块 */
+.iframe_box::-webkit-scrollbar-thumb {
+    border-radius:10px;
+    background:rgba(255,255,255) !important;
+    -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+.iframe_box::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(255,0,0,0.4);
+}
+
+/* safari瀏覽器可用niceScroll.js代替。 */
+
+/* 案例:Chrome 用css修改，再寫userAgent，safari用niceScroll.js。 */
+
+
+.card_box iframe{
+    width: 100%;
+    pointer-events: none;
+    height: 238rem;
+}
+
+iframe .navbar-header{
+    display: none !important;
+}
+
+iframe .page-header{
+    display: none !important;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .card_box iframe{
+        height: 220rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .card_box iframe{
+        height: 220rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .card_box .row:nth-child(1) > div:nth-child(1){
+        margin-bottom: 3%;
+    }
+    .card_box .row:nth-child(2) > div:nth-child(1){
+        margin-bottom: 3%;
+    }
+    .card_box .row:nth-child(3) > div:nth-child(1){
+        margin-bottom: 3%;
+    }
+    .card_box .row:nth-child(4) > div:nth-child(1){
+        margin-bottom: 3%;
+    }
+
+    .card_box iframe{
+        height: 230rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .card_box iframe{
+        height: 230rem;
+    }
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .card_box iframe{
+        height: 230rem;
+    }
+}

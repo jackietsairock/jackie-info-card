@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Cards from "./Cards";
+import Presonal from "./Personal";
+import jackieInfo from "./jackie-info.json";
+
+import './app.css';
+
+class App extends Component {
+  render() {
+    return (
+      <Container>
+        <Row>
+          <Col xs="12" sm="12" md="12" lg="12" className="p-3 justify-content-center">
+            <Presonal data={jackieInfo} />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs="12" sm="12" md="12" lg="12" className="p-3 justify-content-center">
+            <Cards data={jackieInfo} />
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default App;
