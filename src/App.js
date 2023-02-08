@@ -5,7 +5,7 @@ import Cards from "./Cards";
 import Presonal from "./Personal";
 import jackieInfo from "./jackie-info.json";
 
-import './app.css';
+import './App.css';
 
 class App extends Component {
   render() {
